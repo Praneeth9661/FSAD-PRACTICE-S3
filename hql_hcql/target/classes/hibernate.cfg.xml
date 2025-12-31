@@ -1,0 +1,25 @@
+
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- DB CONNECTION -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/testdb</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Anjan@7254</property>
+
+        <!-- DIALECT -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- AUTO TABLE CREATE -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- SHOW SQL -->
+        <property name="show_sql">true</property>
+
+        <!-- ENTITY -->
+        <mapping class="com.klu.Student" />
+
+    </session-factory>
+</hibernate-configuration>
